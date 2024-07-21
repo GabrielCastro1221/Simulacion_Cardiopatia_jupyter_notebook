@@ -47,9 +47,9 @@ _***TARGET***_   | Estado de enfermedad cardíaca: 0 = Sano - 1 = Enfermo
 + `info`: Este metodo de la libreria `pandas` proporciona información detallada del conjunto de datos.
 + `astype`: Este metodo de la libreria `pandas` permite hacer tranformaciones de datos sobre el conjunto de datos en el que se esta trabajando.
 + `describe`: Este metodo de la libreria `pandas` muestra los datos estadisticos de los datos numericos del conjunto de datos.
-+ `describe(include="object")`: Este metodo de la libreria `pandas` muestra el resultado de los datos categoricos del conunto de datos.
++ `describe(include="object")`: Este metodo de la libreria `pandas` muestra el resultado de los datos categoricos del conjunto de datos.
 + `plt.subplots`: Este metodo de la libreria `MatPlotLib` le asigna las dimensiones a la visualización
-+ `np.floor & np.ceil`: Este metodo de la libreria `numpy` en este analisis servira para darle un rango de columnas y celdas a las visualizaciones generadas.
++ `np.floor & np.ceil`: Este metodo de la libreria `numpy` asigna un rango de columnas y celdas a las visualizaciones generadas.
 + `sns.histplot`: Este metodo de la libreria `seaborn` permite crear una visualizacion tipo histograma.
 + `plt.suptitle`: Este metodo de la libreria `MatPlotLib` permite agregarle un subtitulo alucivo a lo que se representa en los graficos.
 + `plt.tight_layout`: Este metodo de la libreria `MatPlotLib` permite automatizar la distribucion de los datos en la visualización
