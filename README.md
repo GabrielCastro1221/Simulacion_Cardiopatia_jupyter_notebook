@@ -44,31 +44,64 @@ _***TARGET***_   | Estado de enfermedad cardíaca: 0 = Sano - 1 = Enfermo
 ## _***Metodos Utilizados en el Notebook***_
 
 + `pd.read_csv`: Este metodo de la libreria `pandas` permite cargar el conjunto de datos proveniente de la URL de github en el proyecto.
+
 + `info`: Este metodo de la libreria `pandas` proporciona información detallada del conjunto de datos.
+
 + `astype`: Este metodo de la libreria `pandas` permite hacer tranformaciones de datos sobre el conjunto de datos en el que se esta trabajando.
+
 + `describe`: Este metodo de la libreria `pandas` muestra los datos estadisticos de los datos numericos del conjunto de datos.
+
 + `describe(include="object")`: Este metodo de la libreria `pandas` muestra el resultado de los datos categoricos del conjunto de datos.
-+ `plt.subplots`: Este metodo de la libreria `MatPlotLib` le asigna las dimensiones a la visualización
+
++ `plt.subplots`: Este metodo de la libreria `MatPlotLib` le asigna las dimensiones a la visualización.
+
 + `np.floor & np.ceil`: Este metodo de la libreria `numpy` asigna un rango de columnas y celdas a las visualizaciones generadas.
+
 + `sns.histplot`: Este metodo de la libreria `seaborn` permite crear una visualizacion tipo histograma.
+
 + `plt.suptitle`: Este metodo de la libreria `MatPlotLib` permite agregarle un subtitulo alucivo a lo que se representa en los graficos.
-+ `plt.tight_layout`: Este metodo de la libreria `MatPlotLib` permite automatizar la distribucion de los datos en la visualización
+
++ `plt.tight_layout`: Este metodo de la libreria `MatPlotLib` permite automatizar la distribucion de los datos en la visualización.
+
 + `plt.subplots_adjust`: Este metodo de la libreria `MatPlotLib` permite agregar espaciado perzonalido a las visualizaciones.
+
 + `plt.show`: Este metodo de la libreria `MatPlotLib` permite mostrar el grafico en el notebook.
-+ `difference`: Este metodo de la libreria `pandas` permite hacer la diferencia de entre conjuntos de datos.
+
++ `difference`: Este metodo de la libreria `pandas` permite hacer la diferencia entre los conjuntos de datos.
+
 + `value_counts`: Este metodo de la libreria `pandas` se utiliza para contar la frecuencia de valores unicos en una serie de datos.
+
 + `sort_values`: Este metodo de la libreria `pandas` Sirve pa ordenar valores de una o mas columnas.
+
 + `set_palette`: Este metodo de la  libreria `seaborn` Sirve pa asignar colores personalizados a las visualizaciones.
-+ `sns.barplot`: Este metodo de la libreria `seaborn` permite crar una visualización de barras.
+
++ `sns.barplot`: Este metodo de la libreria `seaborn` permite crear una visualización de barras.
+
 + `sns.kdeplot`: Este metodo de la libreria `seaborn` permite ajustar la apariencia del grafico segun la probabilidad de las variables basadas en la serie de datos.
+
++ `train_test_split`: Es una función utilizada en el campo del aprendizaje automático y la ciencia de datos para dividir un conjunto de datos en dos subconjuntos: uno para entrenar el modelo (train set) y otro para evaluar su rendimiento (test set). Esta función es parte de la librería `scikit-learn`, que es una herramienta popular en Python para tareas de aprendizaje automático.
+
++ `fit`: Es una función de la libreria `scikit-learn` clave utilizada para entrenar modelos de aprendizaje automático.
+
++ `predict`: En `scikit-learn` se utiliza para hacer predicciones con un modelo de aprendizaje automático que ha sido previamente entrenado usando el método fit. Dependiendo del tipo de modelo, predict puede devolver clases para clasificación o valores continuos para regresión.
+
++ `classification_report`: En `scikit-learn` se utiliza para generar un informe detallado del rendimiento de un modelo de clasificación. Este informe incluye métricas clave como la precisión (precision), la recuperación (recall), la puntuación F1 (F1-score) y el soporte (support) para cada clase.
+
++ `accuracy_score`: En `scikit-learn` se utiliza para calcular la precisión (accuracy) de un modelo de clasificación, que es la proporción de predicciones correctas realizadas por el modelo sobre el total de predicciones.
+
++ `evaluate_model`: No es un método específico de `scikit-learn`, pero generalmente se refiere al proceso de evaluación de un modelo de aprendizaje automático, es decir, cómo medir su rendimiento en un conjunto de datos de prueba (o validación). En el contexto de `scikit-learn`, "evaluar un modelo" implica utilizar diversas métricas para entender cómo se comporta el modelo en tareas de predicción.
+
++ `Pipeline`: Es como una línea de ensamblaje para las operaciones de procesamiento de datos y modelado predictivo.
+
++ `scaler`: Es una clase proporcionada por la librería `scikit-learn`. Su función principal es estandarizar características al eliminar la media y escalar los datos de manera que su varianza sea igual a 1.
 
 ## _***Glosario***_
 
-1. _***Data wrangling***_ `Limpieza de datos`: también conocido como data munging, es el proceso de limpiar, estructurar y enriquecer conjuntos de datos crudos en formatos más utilizables para análisis. Implica transformar datos en diferentes formatos, fusionar conjuntos de datos, detectar y corregir errores en los datos, así como manejar valores faltantes y asegurar que los datos estén en el formato adecuado para su análisis.
+1. _***Data wrangling***_ `Limpieza de datos`: También conocido como data munging, es el proceso de limpiar, estructurar y enriquecer conjuntos de datos crudos en formatos más utilizables para análisis. Implica transformar datos en diferentes formatos, fusionar conjuntos de datos, detectar y corregir errores en los datos, así como manejar valores faltantes y asegurar que los datos estén en el formato adecuado para su análisis.
 
-2. _***Datos categoricos***_: son un tipo de datos que representan características y cualidades, en lugar de cantidades numéricas. Estos datos se dividen en categorías o grupos discretos y finitos.
+2. _***Datos categoricos***_: Es un tipo de dato que representa las características y cualidades, en lugar de cantidades numéricas. Estos datos se dividen en categorías o grupos discretos y finitos.
 
-3. _***Datos continuos***_: son otro tipo de datos que representan valores numéricos que pueden tomar cualquier valor dentro de un intervalo específico.
+3. _***Datos continuos***_: Es otro tipo de dato que representa los valores numéricos que pueden tomar cualquier valor dentro de un intervalo específico.
 
 4. _***Exploratory data analysis***_ `EDA`: Es una etapa fundamental en el proceso de análisis de datos, donde se utilizan técnicas estadísticas y gráficas para explorar y entender los datos antes de aplicar métodos más avanzados o realizar inferencias.
 
@@ -92,8 +125,14 @@ _***TARGET***_   | Estado de enfermedad cardíaca: 0 = Sano - 1 = Enfermo
 
 14. _***Validacion cruzada***_: Es una técnica utilizada en el aprendizaje automático y en estadística para evaluar la capacidad de generalización de un modelo predictivo. Esta técnica permite utilizar un conjunto de datos de manera más eficiente y proporciona una estimación más precisa del rendimiento del modelo en datos no vistos.
 
-15. _***GridSearchCV***_ es una técnica utilizada para el ajuste de hiperparámetros en el aprendizaje automático, particularmente en el contexto de algoritmos de aprendizaje supervisados.
+15. _***GridSearchCV***_: Es una técnica utilizada para el ajuste de hiperparámetros en el aprendizaje automático, particularmente en el contexto de algoritmos de aprendizaje supervisados.
 
-16. _***StratifiedKFold***_ es una técnica de validación cruzada, particularmente útil cuando se trata de problemas de clasificación. La validación cruzada es esencial para evaluar el rendimiento de un modelo de aprendizaje automático y para ajustar los hiperparámetros sin sobreajustar los datos de entrenamiento.
+16. _***StratifiedKFold***_: Es una técnica de validación cruzada, particularmente útil cuando se trata de problemas de clasificación. La validación cruzada es esencial para evaluar el rendimiento de un modelo de aprendizaje automático y para ajustar los hiperparámetros sin sobreajustar los datos de entrenamiento.
 
 17. _***Muestreo estratificado***_: Es una técnica de muestreo utilizada para mejorar la representatividad de una muestra al dividir los datos en grupos homogéneos, llamados estratos, y luego seleccionar muestras aleatorias de cada uno de estos estratos. Esto asegura que cada subgrupo de datos esté adecuadamente representado en la muestra.
+
+18. SVM _***(máquina de vectores de soporte)***_: Es un algoritmo de aprendizaje supervisado que se utiliza principalmente para clasificación y regresión en el campo del aprendizaje automático. La SVM trabaja buscando el hiperplano en un espacio de alta dimensionalidad que mejor separa las diferentes clases en los datos de entrenamiento.
+
+19. _***Árboles de decisión (DT)***_: Es un modelo de aprendizaje supervisado que se utiliza tanto para problemas de clasificación como de regresión. Se basa en la representación de decisiones lógicas, estructuradas como un árbol, donde cada nodo representa una característica del conjunto de datos, cada rama una decisión y cada hoja una clase o valor de salida.
+
+20. _***K-Vecinos más cercanos (KNN)***_: Es un algoritmo de aprendizaje supervisado utilizado tanto para tareas de clasificación como de regresión. KNN clasifica un nuevo punto de datos basado en la mayoría de votos de sus "k" vecinos más cercanos en el espacio de características.
